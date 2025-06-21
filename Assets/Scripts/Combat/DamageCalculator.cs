@@ -22,7 +22,7 @@ namespace Game.Combat {
             if (Random.value < Mathf.Clamp01(totalCritChance))
                 dmg *= critMultiplier;
 
-            dmg *= Random.Range(0.85f, 1.15f);
+            dmg *= Random.Range(0.85f, 1.20f);
             return Mathf.Max(Mathf.RoundToInt(dmg), 0);
         }
     }
