@@ -660,8 +660,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7e69c865537e05a4bb25dacd8fe46a12, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Game.UI.SkillButtonsUI
-  buttonPanel: {fileID: 589039764}
-  buttonPrefab: {fileID: 4136878039347967711, guid: 7a2842e56d1de6946879e81a2aa7afac, type: 3}
+  buttonPrefab: {fileID: 7122235173015571002, guid: f866b92c8d15d6c41b1ea440401c020e, type: 3}
+  buttonContainer: {fileID: 589039764}
 --- !u!225 &589039769
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -920,13 +920,10 @@ MonoBehaviour:
   maxHp: 100
   speed: 0
   isAlive: 1
-  hasActedThisTurn: 0
-  animator: {fileID: 0}
+  animator: {fileID: 1031193184}
   skills:
-  - {fileID: 11400000, guid: c1663053fa0b1b645a12d6cf0541f652, type: 2}
-  - {fileID: 11400000, guid: 7cbe98bdaab714e41a802958ce55ed53, type: 2}
-  - {fileID: 11400000, guid: 8c4c2893f5701ce49aec5694ba9a4517, type: 2}
-  type: 0
+  - {fileID: 11400000, guid: d818ed193527889478f49dc4bd3dac6b, type: 2}
+  - {fileID: 11400000, guid: 0f31514d28d2e8644bf1645d835feae5, type: 2}
   turnMeter: 0
 --- !u!114 &1031193183
 MonoBehaviour:
@@ -949,6 +946,11 @@ MonoBehaviour:
   intelligence: 10
   spirit: 10
   critChance: 0.15
+--- !u!95 &1031193184 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 95072990338906668, guid: da3eb27b09f49164f92acc665ec93174, type: 3}
+  m_PrefabInstance: {fileID: 1031193178}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1522104001
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1094,13 +1096,11 @@ MonoBehaviour:
   maxHp: 100
   speed: 0
   isAlive: 1
-  hasActedThisTurn: 0
-  animator: {fileID: 0}
+  animator: {fileID: 1522104007}
   skills:
-  - {fileID: 11400000, guid: 7cbe98bdaab714e41a802958ce55ed53, type: 2}
-  type: 0
+  - {fileID: 11400000, guid: d818ed193527889478f49dc4bd3dac6b, type: 2}
   turnMeter: 0
-  defaultSkill: {fileID: 11400000, guid: 7cbe98bdaab714e41a802958ce55ed53, type: 2}
+  defaultSkill: {fileID: 0}
 --- !u!114 &1522104006
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1122,6 +1122,11 @@ MonoBehaviour:
   intelligence: 10
   spirit: 10
   critChance: 0.15
+--- !u!95 &1522104007 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 95106370592172250, guid: d4c3e2de152530241a2c4d7e0f3d07d9, type: 3}
+  m_PrefabInstance: {fileID: 1522104001}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1707604476
 GameObject:
   m_ObjectHideFlags: 0
@@ -1301,7 +1306,7 @@ Canvas:
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
   m_VertexColorAlwaysGammaSpace: 0
-  m_AdditionalShaderChannelsFlag: 0
+  m_AdditionalShaderChannelsFlag: 25
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
   m_SortingOrder: 0

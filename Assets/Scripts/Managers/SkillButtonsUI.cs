@@ -1,82 +1,111 @@
-﻿using Core;
+﻿using System.Collections.Generic;
+using Core;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
-using TMPro;
-using Game.Skills;
 
-namespace Game.UI {
-    /// <summary>
-    /// UI-контроллер для показа кнопок навыков игрока.
-    /// </summary>
-    public class SkillButtonsUI : MonoBehaviour {
+namespace Managers
+{
+    public class SkillButtonsUI : MonoBehaviour
+    {
         public static SkillButtonsUI Instance { get; private set; }
+        [Header("UI References")]
+        [SerializeField] private GameObject buttonPrefab;
+        [SerializeField] private Transform buttonContainer;
 
-        [SerializeField] private Transform buttonPanel;     // Панель, куда инстанцируются кнопки
-        [SerializeField] private GameObject buttonPrefab;   // Префаб кнопки (должен иметь Button + TMP_Text)
+        private UnitBase currentUnit;
+        private UnitBase currentTarget;  
+        private readonly List<SkillButton> skillButtons = new List<SkillButton>();
 
-        private PlayerUnit currentPlayer;
-        private UnitBase currentTarget;
-
-        private void Awake() {
-            // Синглтон
+        private void Awake()
+        {
             if (Instance == null) Instance = this;
             else Destroy(gameObject);
-
-            // Скрываем саму панель по умолчанию
-            buttonPanel.gameObject.SetActive(false);
         }
 
-        /// <summary>
-        /// Показать кнопки навыков для данного игрока и цели.
-        /// </summary>
-        public void ShowButtons(PlayerUnit player, UnitBase target) {
-            currentPlayer = player;
+        public void ShowButtons(UnitBase unit, UnitBase target)
+        {
             currentTarget = target;
-
-            // Очистить старые
+            Initialize(unit);
+        }
+        public void Initialize(UnitBase unit)
+        {
+            currentUnit = unit;
             ClearButtons();
 
-            // Получаем массив навыков из PlayerUnit
-            Skill[] skills = player.GetSkills();
-            for (int i = 0; i < skills.Length; i++) {
-                int index = i;
-                GameObject btnObj = Instantiate(buttonPrefab, buttonPanel);
-
-                // Подпись или иконка
-                var label = btnObj.GetComponentInChildren<TMP_Text>();
-                if (label != null) label.text = skills[index].skillName;
-
-                // Обработчик клика
-                var btn = btnObj.GetComponent<Button>();
-                if (btn != null) {
-                    btn.onClick.AddListener(() => {
-                        // Выбираем скилл, запускаем ход и прячем кнопки
-                        currentPlayer.SetSelectedSkill(index);
-                        currentPlayer.TakeTurn(currentTarget);
-                        HideButtons();
-                    });
+            var instances = unit.SkillBook;
+            for (int i = 0; i < instances.Count; i++)
+            {
+                var inst = instances[i];
+                var go = Instantiate(buttonPrefab, buttonContainer);
+                var btn = go.GetComponent<Button>();
+                var iconImg = go.transform.Find("Icon").GetComponent<Image>();
+                var overlayTf = go.transform.Find("CooldownOverlay");
+                if (overlayTf == null)
+                {
+                    Debug.LogError($"[{nameof(SkillButtonsUI)}] В префабе нет дочернего объекта 'CooldownOverlay'");
+                    return;
                 }
-            }
+                var overlay = go.transform.Find("CooldownOverlay").GetComponent<Image>();
+                var cdText = go.transform.Find("CooldownText").GetComponent<TMP_Text>();
 
-            // Делаем панель видимой и интерактивной
-            buttonPanel.gameObject.SetActive(true);
+                iconImg.sprite = inst.Definition.Icon;
+                int index = i;
+                btn.onClick.AddListener(() => OnSkillButtonClicked(index));
+                btn.onClick.AddListener(() => {
+                    Debug.Log($"[SkillButtonsUI] Clicked skill #{index}");
+                    currentUnit.UseSkill(index, currentTarget);
+                });
+
+                skillButtons.Add(new SkillButton
+                {
+                    Button = btn,
+                    Instance = inst,
+                    Overlay = overlay,
+                    CooldownText = cdText
+                });
+            }
         }
 
-        /// <summary>
-        /// Скрыть все кнопки и саму панель.
-        /// </summary>
-        public void HideButtons() {
-            buttonPanel.gameObject.SetActive(false);
+        private void OnSkillButtonClicked(int index)
+        {
+            Debug.Log($"[SkillButtonsUI] Clicked skill #{index}");
+            currentUnit.UseSkill(index, currentTarget);
+            currentUnit.TickSkillCooldowns();
             ClearButtons();
+            TurnManager.Instance.FinishTurn();
         }
 
-        /// <summary>
-        /// Удаляет все дочерние объекты из buttonPanel.
-        /// </summary>
-        private void ClearButtons() {
-            for (int i = buttonPanel.childCount - 1; i >= 0; i--) {
-                Destroy(buttonPanel.GetChild(i).gameObject);
+        private void Update()
+        {
+            // Обновляем состояние кнопок каждый кадр
+            foreach (var sb in skillButtons)
+            {
+                sb.Button.interactable = sb.Instance.IsReady;
+                sb.Overlay.gameObject.SetActive(!sb.Instance.IsReady);
+                sb.CooldownText.text = sb.Instance.RemainingCooldown.ToString();
             }
+        }
+
+        private void ClearButtons()
+        {
+            foreach (var sb in skillButtons)
+                Destroy(sb.Button.gameObject);
+            skillButtons.Clear();
+        }
+
+        private UnitBase ChooseTarget()
+        {
+            // TODO: реализовать логику выбора цели через GameManager или TargetSelector
+            return null;
+        }
+
+        private class SkillButton
+        {
+            public Button Button;
+            public SkillInstance Instance;
+            public Image Overlay;
+            public TMP_Text CooldownText;
         }
     }
 }

@@ -1,37 +1,42 @@
 ﻿using System;
 using System.Collections;
-using Game.Skills;
+using System.Collections.Generic;
+using System.Linq;
 using Managers;
 using Unity.Collections;
 using UnityEngine;
 
 namespace Core
 {
-    public enum SkillAnimationType
-    {
-        Attack,
-        Cast,
-        Block
-    }
-
     public abstract class UnitBase : MonoBehaviour
     {
         private static readonly int Block = Animator.StringToHash("Block");
-        private static readonly int Cast = Animator.StringToHash("Cast");
         private static readonly int Attack = Animator.StringToHash("Attack");
+        private static readonly int Cast = Animator.StringToHash("Cast");
         [Header("Stats")] public UnitStats stats;
         public string unitName;
         [SerializeField] private int maxHp = 100;
-        [ReadOnly] private int currentHp;
+        private int currentHp;
         public int speed;
         public bool isAlive = true;
-        public bool hasActedThisTurn = false;
         public Animator animator;
         protected Skill SelectedSkill;
-        [SerializeField] protected Skill[] skills;
-        [SerializeField] private SkillAnimationType type;
+        [SerializeField] protected List<Skill> skills;
+        private List<SkillInstance> skillBook;
         [HideInInspector] public float turnMeter = 0f;
+        
+        public IReadOnlyList<SkillInstance> SkillBook => skillBook;
 
+
+        public void TickSkillCooldowns()
+        {
+            foreach (var inst in skillBook)
+            {
+                inst.TickCooldown();
+            }
+        }
+
+        public bool HasActedThisTurn { get; private set; }
 
         protected virtual void Awake()
         {
@@ -43,6 +48,8 @@ namespace Core
                 Debug.LogWarning($"{name} is missing UnitStats, adding one.");
                 stats = gameObject.AddComponent<UnitStats>();
             }
+
+            skillBook = skills.Select(s => new SkillInstance(s)).ToList();
         }
 
         public virtual void TakeTurn(UnitBase target)
@@ -55,17 +62,32 @@ namespace Core
         // ReSharper disable Unity.PerformanceAnalysis
         protected virtual IEnumerator PerformTurn(UnitBase target)
         {
-            hasActedThisTurn = true;
+            HasActedThisTurn = true;
 
             UseSkill(target);
 
             // Wait until animation or attack logic finishes, if needed
             yield return new WaitForSeconds(1f);
-
+            
+            TickSkillCooldowns();
             TurnManager.Instance.FinishTurn();
         }
 
-        public abstract void UseSkill(UnitBase target);
+        public void UseSkill(int index, UnitBase target)
+        {
+            if (index < 0 || index >= skillBook.Count || target == null)
+                return;
+
+            skillBook[index].TryApply(this, target);
+        }
+
+        /// <summary>
+        /// Переопределяется в EnemyUnit/PlayerUnit для ИИ или ввода игрока.
+        /// </summary>
+        public virtual void UseSkill(UnitBase target)
+        {
+            UseSkill(0, target);
+        }
 
         // ReSharper disable Unity.PerformanceAnalysis
         public virtual void TakeDamage(int amount)
@@ -73,8 +95,8 @@ namespace Core
             currentHp -= Mathf.Max(0, amount);
             currentHp = Mathf.Clamp(currentHp, 0, maxHp);
             Debug.Log($"{unitName} takes {amount} dmg (HP: {currentHp}/{maxHp})");
-            
-            if (currentHp <= 0) 
+
+            if (currentHp <= 0)
                 Die();
         }
 
@@ -94,27 +116,30 @@ namespace Core
             }
         }
 
-        public void PlaySkillAnimation(SkillAnimationType type)
+        public void PlaySkillAnimation(SkillAnimationType animationType)
         {
             if (animator == null) return;
 
-            switch (type)
+            switch (animationType)
             {
-                case SkillAnimationType.Attack:
-                    animator.SetTrigger(Attack);
-                    break;
-                case SkillAnimationType.Cast:
+                case SkillAnimationType.Magic:
                     animator.SetTrigger(Cast);
+                    break;
+                case SkillAnimationType.Melee:
+                    animator.SetTrigger(Attack);
                     break;
                 case SkillAnimationType.Block:
                     animator.SetTrigger(Block);
                     break;
+                case SkillAnimationType.Ranged:
+                    animator.SetTrigger(Attack);
+                    break;
                 default:
-                    throw new ArgumentOutOfRangeException(nameof(type), type, null);
+                    throw new ArgumentOutOfRangeException(nameof(animationType), animationType, null);
             }
         }
 
-        public virtual Skill[] GetSkills() => skills;
+        protected virtual Skill[] GetSkills() => skills.ToArray();
 
 #if UNITY_EDITOR
         protected virtual void OnValidate()
@@ -122,7 +147,7 @@ namespace Core
             var skills = GetSkills();
             if (skills == null || skills.Length == 0)
                 Debug.LogError(
-                    $"[{name}] {GetType().Name} должен иметь хотя бы один навык!",
+                    $"[{name}] {GetType().Name} Must have at least one skill assigned to it.",
                     this
                 );
         }

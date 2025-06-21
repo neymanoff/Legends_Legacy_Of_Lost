@@ -9,13 +9,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 116ff5236b27da848ae73715e803d274, type: 3}
-  m_Name: Slash
-  m_EditorClassIdentifier: 
-  skillName: 
-  baseAmount: 0
+  m_Script: {fileID: 11500000, guid: ba72742f6a5701d40a3c8aec901f15a6, type: 3}
+  m_Name: Basic Attack
+  m_EditorClassIdentifier: Assembly-CSharp::Skills.BasicAttackSkill
+  skillName: Basic Attack
   icon: {fileID: 21300000, guid: c7c934ec361f8734dac7f85c4b623051, type: 3}
-  initialSkillLevel: 100
-  animationType: 0
-  critChance: 0.1
-  critMultiplier: 2
+  description: 'Basic Attak
+
+'
+  baseAmount: 0
+  animationType: 1
+  cooldownTurns: 0
