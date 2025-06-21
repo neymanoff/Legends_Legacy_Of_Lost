@@ -1,0 +1,9 @@
+{
+    "asset": "3c26d82c3a1e18e458fe93c0a27c85b9",
+    "fileName": "01976db2-c559-7b4b-bb21-b2505edecb7c.pose.json",
+    "prompt": "сделай анимацию промаха если умение было шанс на срабатывания умения прошёл не успешно\n",
+    "negativePrompt": "",
+    "model": "a9c27ca4-3ec9-43e8-96cd-ee891aba64c5",
+    "customSeed": 1256950301,
+    "w3CTraceId": "78dd1ce75361027d351c5ab03eae4e81"
+}

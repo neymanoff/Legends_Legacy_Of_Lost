@@ -1,0 +1,9 @@
+{
+    "asset": "7780dda3355ae9b4fa6fe5eac66d15cd",
+    "fileName": "01976db0-dcca-7be9-929c-9d7a609ae914.pose.json",
+    "prompt": "Create an animation for floating 'Miss' text above an enemy's head when a skill fails to hit.",
+    "negativePrompt": "",
+    "model": "a9c27ca4-3ec9-43e8-96cd-ee891aba64c5",
+    "customSeed": 1784568948,
+    "w3CTraceId": "8a665f9954073a9b8851fb0a3b3267c8"
+}

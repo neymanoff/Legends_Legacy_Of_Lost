@@ -1,0 +1,10 @@
+# Normalize text files and improve diff
+* text=auto
+
+# Use better diff for C# and Unity files
+*.cs text diff=csharp
+*.shader text
+*.cginc text
+*.asmdef text
+*.json text
+*.xml text
