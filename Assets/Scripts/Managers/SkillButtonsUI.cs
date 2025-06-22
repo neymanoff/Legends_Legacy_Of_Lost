@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using Core;
 using TMPro;
+using UI.Battle;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -39,6 +40,8 @@ namespace Managers
                 var inst = instances[i];
                 var go = Instantiate(buttonPrefab, buttonContainer);
                 var btn = go.GetComponent<Button>();
+                var tooltipHandler = go.AddComponent<SkillButtonTooltipHandler>();
+                tooltipHandler.Init(inst);
                 var iconImg = go.transform.Find("Icon").GetComponent<Image>();
                 var overlayTf = go.transform.Find("CooldownOverlay");
                 if (overlayTf == null)

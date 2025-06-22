@@ -52,6 +52,8 @@
     <Compile Include="Assets\Scripts\Core\SkillFeedback.cs" />
     <Compile Include="Assets\Scripts\Combat\DamageCalculator.cs" />
     <Compile Include="Assets\Scripts\Core\SkillLevelData.cs" />
+    <Compile Include="Assets\Scripts\UI\Battle\SkillTooltip.cs" />
+    <Compile Include="Assets\Scripts\UI\Battle\SkillButtonTooltipHandler.cs" />
     <Compile Include="Assets\DoubleL\Demo\DemoCameraController.cs" />
     <Compile Include="Assets\Scripts\Skills\BasicAttackSkill.cs" />
     <Compile Include="Assets\Scripts\Units\EnemyUnit.cs" />

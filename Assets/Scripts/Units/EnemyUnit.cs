@@ -17,7 +17,7 @@ namespace Units
                 return;
             }
             PlaySkillAnimation(skill.AnimationType);
-            skill.Apply(this, target, 1f);
+            base.UseSkill(target);
         }
     }
 }
