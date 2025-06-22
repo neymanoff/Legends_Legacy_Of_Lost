@@ -49,6 +49,7 @@
     <Compile Include="Assets\Scripts\Core\UnitStats.cs" />
     <Compile Include="Assets\Scripts\Core\Skill.cs" />
     <Compile Include="Assets\Scripts\Core\UnitBase.cs" />
+    <Compile Include="Assets\Scripts\Core\SkillFeedback.cs" />
     <Compile Include="Assets\Scripts\Combat\DamageCalculator.cs" />
     <Compile Include="Assets\Scripts\Core\SkillLevelData.cs" />
     <Compile Include="Assets\DoubleL\Demo\DemoCameraController.cs" />

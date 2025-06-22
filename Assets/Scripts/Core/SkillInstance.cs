@@ -1,7 +1,7 @@
 using System;
 using Game.UI;
 using UnityEngine;
-using Units; // для проверки типа юнита
+using Units; 
 
 namespace Core
 {
@@ -26,27 +26,39 @@ namespace Core
         public bool TryApply(UnitBase caster, UnitBase target)
         {
             if (!IsReady) return false;
+
             caster.PlaySkillAnimation(Definition.AnimationType);
 
             float chance = LevelData.SuccessChance;
             if (UnityEngine.Random.value > chance)
             {
-                FloatingTextSpawner.Instance.Spawn("Miss", caster.transform.position + Vector3.up * 1.5f, Color.red, false);
+                // Промах — только “Miss” над кастером
+                FloatingTextSpawner.Instance.Spawn(
+                    "Miss",
+                    caster.transform.position + Vector3.up * 1.5f,
+                    Color.red
+                );
+
                 RemainingCooldown = Definition.Cooldown;
                 return false;
             }
 
-            Definition.Apply(caster, target, LevelData.PowerMultiplier);
-            RemainingCooldown = Definition.Cooldown;
-
-            // Только герои получают XP и прокачивают навык
-            if (caster is PlayerUnit)
+            // Успех — само применение и спавн урона/фидбэков
+            var feedbacks = Definition.Apply(caster, target, LevelData.PowerMultiplier);
+            foreach (var fb in feedbacks)
             {
-                LevelData.TryGainXp();
+                FloatingTextSpawner.Instance.Spawn(
+                    fb.Text,
+                    fb.Target.transform.position + Vector3.up * 1.5f,
+                    fb.Color
+                );
             }
 
+            RemainingCooldown = Definition.Cooldown;
+            if (caster is PlayerUnit) LevelData.TryGainXp();
             return true;
         }
+
 
         public void TickCooldown()
         {

@@ -92,6 +92,7 @@ namespace Core
         // ReSharper disable Unity.PerformanceAnalysis
         public virtual void TakeDamage(int amount)
         {
+            if (amount <= 0) return;
             currentHp -= Mathf.Max(0, amount);
             currentHp = Mathf.Clamp(currentHp, 0, maxHp);
             Debug.Log($"{unitName} takes {amount} dmg (HP: {currentHp}/{maxHp})");

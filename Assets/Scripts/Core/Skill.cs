@@ -1,4 +1,4 @@
-﻿using Unity.VisualScripting;
+﻿using System.Collections.Generic;
 using UnityEngine;
 
 
@@ -35,6 +35,6 @@ namespace Core
         public int Cooldown => cooldownTurns;
 
 
-        public abstract void Apply(UnitBase caster, UnitBase target, float powerMultiplier);
+        public abstract List<SkillFeedback> Apply(UnitBase caster, UnitBase target, float powerMultiplier);
     }
 }
