@@ -1,5 +1,5 @@
 using System;
-using Game.UI;
+using UI.Battle;
 using UnityEngine;
 using Units; 
 
@@ -32,18 +32,15 @@ namespace Core
             float chance = LevelData.SuccessChance;
             if (UnityEngine.Random.value > chance)
             {
-                // Промах — только “Miss” над кастером
                 FloatingTextSpawner.Instance.Spawn(
                     "Miss",
                     caster.transform.position + Vector3.up * 1.5f,
                     Color.red
                 );
-
                 RemainingCooldown = Definition.Cooldown;
                 return false;
             }
 
-            // Успех — само применение и спавн урона/фидбэков
             var feedbacks = Definition.Apply(caster, target, LevelData.PowerMultiplier);
             foreach (var fb in feedbacks)
             {
@@ -53,7 +50,6 @@ namespace Core
                     fb.Color
                 );
             }
-
             RemainingCooldown = Definition.Cooldown;
             if (caster is PlayerUnit) LevelData.TryGainXp();
             return true;

@@ -1,19 +1,40 @@
 ﻿// Assets/Scripts/UI/FloatingTextSpawner.cs
+
+using Game.UI;
 using UnityEngine;
 
-namespace Game.UI {
-    public class FloatingTextSpawner : MonoBehaviour {
-        public static FloatingTextSpawner Instance { get; private set; }
+namespace UI.Battle {
+    public class FloatingTextSpawner : MonoBehaviour
+    {
+        private static FloatingTextSpawner _instance;
+        public static FloatingTextSpawner Instance
+        {
+            get
+            {
+                if (_instance != null) return _instance;
+                _instance = FindObjectOfType<FloatingTextSpawner>();
+                if (_instance != null) return _instance;
+                var go = new GameObject(nameof(FloatingTextSpawner));
+                _instance = go.AddComponent<FloatingTextSpawner>();
+                DontDestroyOnLoad(go);
+                return _instance;
+            }
+        }
 
         [SerializeField] private GameObject floatingTextPrefab;
         [SerializeField] private Canvas worldCanvas;
 
         private void Awake() {
             if (Instance != null && Instance != this) {
-                Destroy(gameObject);
+                if (Application.isPlaying)
+                    Destroy(gameObject);
+                else
+                    DestroyImmediate(gameObject);
+
                 return;
             }
-            Instance = this;
+            _instance = this;
+            DontDestroyOnLoad(gameObject);
         }
 
         public void Spawn(string content, Vector3 worldPosition, Color color, bool isCrit = false) {

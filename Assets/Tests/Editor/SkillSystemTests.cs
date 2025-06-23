@@ -5,6 +5,7 @@ using System.Reflection;
 using Core;      // Skill, SkillFeedback, SkillInstance, SkillLevelData, UnitBase :contentReference[oaicite:4]{index=4}
 using Game.UI;   // FloatingTextSpawner :contentReference[oaicite:5]{index=5}
 using NUnit.Framework;
+using UI.Battle;
 using UnityEngine;
 
 namespace Tests
