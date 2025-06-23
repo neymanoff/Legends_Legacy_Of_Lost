@@ -9,14 +9,14 @@ onBoardingDoNotAskAgain = true
 showPackageIndexes = false
 showStatusBar = false
 scopes = {
-	"last_search.66F56946" = "preserve"
+	"last_search.66F56946" = "Preserve Aspect,"
 	"OpenInspectorPreview.66F56946" = "0"
 	"currentGroup.66F56946" = null
 	"picker_window_position_offset.075BCD15" = "-137,3334;37,33334;320;550"
 	"picker_visibility_flags.075BCD15" = "264"
 	"picker_item_size.075BCD15" = "96"
 	"picker_inspector.075BCD15" = "0"
-	"picker_window_position_offset.00000000" = "49,33337;243,3333;320;550"
+	"picker_window_position_offset.00000000" = "8,666687;28,66667;320;550"
 	"picker_visibility_flags.00000000" = "0"
 	"picker_item_size.00000000" = "1"
 	"picker_inspector.00000000" = "0"
@@ -81,6 +81,7 @@ providers = {
 objectSelectors = {
 }
 recentSearches = [
+	"Preserve Aspect,"
 ]
 searchItemFavorites = [
 ]

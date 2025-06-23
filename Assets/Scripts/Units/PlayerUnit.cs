@@ -43,7 +43,7 @@ namespace Units
             return skills[index].SkillName;
         }
 
-        protected override Skill[] GetSkills() => skills.ToArray();
+        public override Skill[] GetSkills() => skills.ToArray();
 
     }
 }

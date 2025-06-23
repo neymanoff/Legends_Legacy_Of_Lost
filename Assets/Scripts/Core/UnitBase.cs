@@ -140,7 +140,7 @@ namespace Core
             }
         }
 
-        protected virtual Skill[] GetSkills() => skills.ToArray();
+        public virtual Skill[] GetSkills() => skills.ToArray();
 
 #if UNITY_EDITOR
         protected virtual void OnValidate()
