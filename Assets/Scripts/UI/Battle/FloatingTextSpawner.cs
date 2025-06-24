@@ -34,7 +34,8 @@ namespace UI.Battle {
                 return;
             }
             _instance = this;
-            DontDestroyOnLoad(gameObject);
+            if (Application.isPlaying)
+                DontDestroyOnLoad(gameObject);
         }
 
         public void Spawn(string content, Vector3 worldPosition, Color color, bool isCrit = false) {
@@ -43,11 +44,14 @@ namespace UI.Battle {
                 return;
             }
 
-            GameObject go = Instantiate(floatingTextPrefab, worldCanvas.transform);
-            Vector3 screenPos = Camera.main.WorldToScreenPoint(worldPosition);
-            go.transform.position = screenPos;
+            var go = Instantiate(floatingTextPrefab, worldCanvas.transform);
+            if (Camera.main != null)
+            {
+                Vector3 screenPos = Camera.main.WorldToScreenPoint(worldPosition);
+                go.transform.position = screenPos;
+            }
 
-            FloatingText floatingText = go.GetComponent<FloatingText>();
+            var floatingText = go.GetComponent<FloatingText>();
             if (floatingText != null) {
                 floatingText.Show(content, color, isCrit);
             } else {

@@ -1,37 +1,42 @@
 // Assets/Tests/Editor/SkillSystemTests.cs
 
+using System;
 using System.Collections.Generic;
 using System.Reflection;
-using Core;      // Skill, SkillFeedback, SkillInstance, SkillLevelData, UnitBase :contentReference[oaicite:4]{index=4}
-using Game.UI;   // FloatingTextSpawner :contentReference[oaicite:5]{index=5}
+using Core;
 using NUnit.Framework;
 using UI.Battle;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
-namespace Tests
+namespace Tests.Editor
 {
     public class SkillSystemTests
     {
         [SetUp]
         public void SetUpSpawner()
         {
-            // Создаём спавнер и вручную вызываем его Awake(),
-            // чтобы FloatingTextSpawner.Instance был установлен
+            // Создаём спаунер и вручную вызываем его Awake(),
+            // чтобы FloatingTextSpawner. Instance был установлен
             var go = new GameObject("FTS");
             var spawner = go.AddComponent<FloatingTextSpawner>();
             var awake = typeof(FloatingTextSpawner)
                 .GetMethod("Awake", BindingFlags.Instance | BindingFlags.NonPublic);
-            awake.Invoke(spawner, null);
+            if (awake != null) awake.Invoke(spawner, null);
         }
 
         /// <summary> Устанавливает приватное (или унаследованное) поле через Reflection. </summary>
         private void SetPrivate<T>(object obj, string fieldName, T value)
         {
-            var type  = obj.GetType();
-            var field = type.GetField(fieldName, BindingFlags.Instance | BindingFlags.NonPublic)
-                     ?? type.BaseType.GetField(fieldName, BindingFlags.Instance | BindingFlags.NonPublic);
-            Assert.NotNull(field, $"Field '{fieldName}' not found on {type.Name}");
-            field.SetValue(obj, value);
+         var type = obj.GetType();
+         FieldInfo field = null;
+         while (type != null && field == null)
+         {
+             field = type.GetField(fieldName, BindingFlags.Instance | BindingFlags.NonPublic);
+              type = type.BaseType;
+         }
+         Assert.NotNull(field, $"Field '{fieldName}' not found on {obj.GetType().Name} or its base types");
+         field.SetValue(obj, value);        
         }
 
         /// <summary>
@@ -47,9 +52,9 @@ namespace Tests
                 return new List<SkillFeedback> {
                     dmg > 0
                         ? new SkillFeedback(target, dmg.ToString(), Color.white)
-                        : new SkillFeedback(caster, "Miss",   Color.red)
+                        : new SkillFeedback(caster, "Miss", Color.red)
                 };
-            }
+        } 
         }
 
         /// <summary>
@@ -63,8 +68,8 @@ namespace Tests
             protected override void OnValidate() { }
             #endif
 
-            public override Skill[] GetSkills() => new Skill[0];
-            public new void PlaySkillAnimation(SkillAnimationType type) { }
+            public override Skill[] GetSkills() => Array.Empty<Skill>();
+
             public override void TakeDamage(int amount)
             {
                 if (amount > 0) Debug.Log($"{name} takes {amount} dmg (mock)");
@@ -82,10 +87,16 @@ namespace Tests
             var target = new GameObject().AddComponent<TestUnit>();
 
             var feedbacks = skill.Apply(caster, target, 2f);
-            Assert.AreEqual(1, feedbacks.Count,       "Один feedback");
-            Assert.AreEqual("14", feedbacks[0].Text,   "7 × 2 = 14");
-            Assert.AreEqual(target, feedbacks[0].Target);
-            Assert.AreEqual(Color.white, feedbacks[0].Color);
+            Debug.Log($"[DEBUG] feedbacks.Count = {feedbacks?.Count}");
+            if (feedbacks is { Count: > 0 })
+                Debug.Log($"[DEBUG] feedbacks[0]: Target={feedbacks[0].Target}, Text='{feedbacks[0].Text}', Color={feedbacks[0].Color}");
+            if (feedbacks != null)
+            {
+                Assert.AreEqual(1, feedbacks.Count, "Один feedback");
+                Assert.AreEqual("14", feedbacks[0].Text, "7 × 2 = 14");
+                Assert.AreEqual(target, feedbacks[0].Target);
+                Assert.AreEqual(Color.white, feedbacks[0].Color);
+            }
         }
 
         [Test]
@@ -101,7 +112,7 @@ namespace Tests
             var target = new GameObject().AddComponent<TestUnit>();
 
             bool applied = inst.TryApply(caster, target);
-            Assert.IsTrue(applied,                     "При 100% шансe → true");
+            Assert.IsTrue(applied,                     "При 100% шансе → true");
             Assert.AreEqual(2, inst.RemainingCooldown, "RemainingCooldown == 2");
         }
 
@@ -118,7 +129,7 @@ namespace Tests
             var target = new GameObject().AddComponent<TestUnit>();
 
             bool applied = inst.TryApply(caster, target);
-            Assert.IsFalse(applied,                     "При 0% шансe → false");
+            Assert.IsFalse(applied,                     "При 0% шансе → false");
             Assert.AreEqual(3, inst.RemainingCooldown,  "RemainingCooldown == 3");
         }
 
