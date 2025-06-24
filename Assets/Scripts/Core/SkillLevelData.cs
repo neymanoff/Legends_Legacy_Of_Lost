@@ -11,6 +11,8 @@ namespace Core
 
         public int Level => level;
         public int CurrentExp => currentExp;
+        
+        
 
         //Success chance 100% only 50lv+
         public float SuccessChance => Mathf.Clamp01(level / 50f);
@@ -37,11 +39,17 @@ namespace Core
             {
                 level++;
                 currentExp = 0;
-                Debug.Log(($"[SkillLevelData] Level up! New level: {level}]"));
                 return true;
             }
 
             return false;
+            
+        }
+        
+        public SkillLevelData(int initialLevel)
+        {
+            level = initialLevel;
+            currentExp = 0;
         }
     }
 }

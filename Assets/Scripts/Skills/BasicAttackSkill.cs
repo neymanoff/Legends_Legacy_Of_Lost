@@ -13,7 +13,7 @@ namespace Skills
             int damage = Mathf.RoundToInt(BaseAmount * powerMultiplier);
             var feedbacks = new List<SkillFeedback>();
             if (damage > 0) 
-                feedbacks.Add(new SkillFeedback(target, $"-{damage}", Color.white));
+                feedbacks.Add(new SkillFeedback(target, $"{damage}", Color.white));
             else
                 feedbacks.Add(new SkillFeedback(caster, "Miss", Color.red));
 

@@ -17,9 +17,7 @@ namespace Core
         public SkillInstance(Skill definition, int initialLevel = 1)
         {
             Definition = definition;
-            LevelData = new SkillLevelData();
-            for (int i = 0; i < initialLevel; i++)
-                LevelData.TryGainXp();
+            LevelData = new SkillLevelData(initialLevel);
             RemainingCooldown = 0;
         }
 

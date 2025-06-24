@@ -1092,7 +1092,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f6bc79ed320eb0d4f9327c0a28970457, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  stats: {fileID: 0}
+  stats: {fileID: 1031193183}
   unitName: 
   maxHp: 100
   speed: 0
@@ -1273,7 +1273,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d3d3ae6e8984e6846b9697c241524c07, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  stats: {fileID: 0}
+  stats: {fileID: 1522104006}
   unitName: 
   maxHp: 100
   speed: 0
