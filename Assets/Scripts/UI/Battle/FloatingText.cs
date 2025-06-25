@@ -1,6 +1,8 @@
 ﻿// Assets/Scripts/UI/FloatingText.cs
 using TMPro;
 using UnityEngine;
+using UnityEngine.TextCore.Text;
+using FontStyles = TMPro.FontStyles;
 
 namespace Game.UI {
     public class FloatingText : MonoBehaviour {

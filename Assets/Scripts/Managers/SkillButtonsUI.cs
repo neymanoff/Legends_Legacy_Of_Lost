@@ -81,7 +81,6 @@ namespace Managers
 
         private void Update()
         {
-            // Обновляем состояние кнопок каждый кадр
             foreach (var sb in skillButtons)
             {
                 sb.Button.interactable = sb.Instance.IsReady;
