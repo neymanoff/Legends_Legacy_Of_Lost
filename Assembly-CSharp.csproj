@@ -52,6 +52,9 @@
     <Compile Include="Assets\Scripts\Core\SkillFeedback.cs" />
     <Compile Include="Assets\Scripts\Combat\DamageCalculator.cs" />
     <Compile Include="Assets\Scripts\Core\SkillLevelData.cs" />
+    <Compile Include="Assets\Scripts\Grid\GridCell.cs" />
+    <Compile Include="Assets\Scripts\Grid\HexCoord.cs" />
+    <Compile Include="Assets\Scripts\Managers\GridManager.cs" />
     <Compile Include="Assets\Scripts\UI\Battle\SkillTooltip.cs" />
     <Compile Include="Assets\Scripts\UI\Battle\SkillButtonTooltipHandler.cs" />
     <Compile Include="Assets\DoubleL\Demo\DemoCameraController.cs" />
@@ -1013,8 +1016,6 @@
     <Reference Include="Unity.InferenceEngine">
       <HintPath>C:\Unity\Projects\Legends_Legacy_Of_Lost\Library\ScriptAssemblies\Unity.InferenceEngine.dll</HintPath>
     </Reference>
-  </ItemGroup>
-  <ItemGroup>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.

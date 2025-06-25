@@ -2,8 +2,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using Grid;
 using Managers;
-using Unity.Collections;
 using UnityEngine;
 
 namespace Core
@@ -24,7 +24,7 @@ namespace Core
         [SerializeField] protected List<Skill> skills;
         private List<SkillInstance> skillBook;
         [HideInInspector] public float turnMeter = 0f;
-        
+        public HexCoord GridPosition { get; internal set; }
         public IReadOnlyList<SkillInstance> SkillBook => skillBook;
 
 
@@ -106,7 +106,6 @@ namespace Core
             isAlive = false;
             Debug.Log(unitName + " has died.");
             gameObject.SetActive(false);
-            // Destroy or deactivate unit here if needed
         }
 
         public void PlayAnimation(string trigger)
