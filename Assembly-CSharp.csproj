@@ -447,25 +447,25 @@
       <HintPath>C:\Program Files\Unity\Hub\Editor\6000.2.0b5\Editor\Data\Managed\UnityEngine\UnityEditor.XRModule.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Collections.LowLevel.ILSupport">
-      <HintPath>C:\Unity\Projects\Legends_Legacy_Of_Lost\Library\PackageCache\com.unity.collections@d49facba0036\Unity.Collections.LowLevel.ILSupport\Unity.Collections.LowLevel.ILSupport.dll</HintPath>
+      <HintPath>D:\Unity\My Projects\Legends_Legacy_Of_Lost\Library\PackageCache\com.unity.collections@d49facba0036\Unity.Collections.LowLevel.ILSupport\Unity.Collections.LowLevel.ILSupport.dll</HintPath>
     </Reference>
     <Reference Include="nunit.framework">
-      <HintPath>C:\Unity\Projects\Legends_Legacy_Of_Lost\Library\PackageCache\com.unity.ext.nunit@031a54704bff\net40\unity-custom\nunit.framework.dll</HintPath>
+      <HintPath>D:\Unity\My Projects\Legends_Legacy_Of_Lost\Library\PackageCache\com.unity.ext.nunit@031a54704bff\net40\unity-custom\nunit.framework.dll</HintPath>
     </Reference>
     <Reference Include="System.IO.Hashing">
-      <HintPath>C:\Unity\Projects\Legends_Legacy_Of_Lost\Library\PackageCache\com.unity.collections@d49facba0036\Unity.Collections.Tests\System.IO.Hashing\System.IO.Hashing.dll</HintPath>
+      <HintPath>D:\Unity\My Projects\Legends_Legacy_Of_Lost\Library\PackageCache\com.unity.collections@d49facba0036\Unity.Collections.Tests\System.IO.Hashing\System.IO.Hashing.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VisualScripting.Antlr3.Runtime">
-      <HintPath>C:\Unity\Projects\Legends_Legacy_Of_Lost\Library\PackageCache\com.unity.visualscripting@6279e2b7c485\Runtime\VisualScripting.Flow\Dependencies\NCalc\Unity.VisualScripting.Antlr3.Runtime.dll</HintPath>
+      <HintPath>D:\Unity\My Projects\Legends_Legacy_Of_Lost\Library\PackageCache\com.unity.visualscripting@6279e2b7c485\Runtime\VisualScripting.Flow\Dependencies\NCalc\Unity.VisualScripting.Antlr3.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="System.Runtime.CompilerServices.Unsafe">
-      <HintPath>C:\Unity\Projects\Legends_Legacy_Of_Lost\Library\PackageCache\com.unity.collections@d49facba0036\Unity.Collections.Tests\System.Runtime.CompilerServices.Unsafe\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+      <HintPath>D:\Unity\My Projects\Legends_Legacy_Of_Lost\Library\PackageCache\com.unity.collections@d49facba0036\Unity.Collections.Tests\System.Runtime.CompilerServices.Unsafe\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
     </Reference>
     <Reference Include="Newtonsoft.Json">
-      <HintPath>C:\Unity\Projects\Legends_Legacy_Of_Lost\Library\PackageCache\com.unity.nuget.newtonsoft-json@74deb55db2a0\Runtime\Newtonsoft.Json.dll</HintPath>
+      <HintPath>D:\Unity\My Projects\Legends_Legacy_Of_Lost\Library\PackageCache\com.unity.nuget.newtonsoft-json@74deb55db2a0\Runtime\Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="Mono.Cecil">
-      <HintPath>C:\Unity\Projects\Legends_Legacy_Of_Lost\Library\PackageCache\com.unity.nuget.mono-cecil@d78732e851eb\Mono.Cecil.dll</HintPath>
+      <HintPath>D:\Unity\My Projects\Legends_Legacy_Of_Lost\Library\PackageCache\com.unity.nuget.mono-cecil@d78732e851eb\Mono.Cecil.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Android.Types">
       <HintPath>C:\Program Files\Unity\Hub\Editor\6000.2.0b5\Editor\Data\PlaybackEngines\AndroidPlayer\Unity.Android.Types.dll</HintPath>
@@ -840,211 +840,211 @@
       <HintPath>C:\Program Files\Unity\Hub\Editor\6000.2.0b5\Editor\Data\NetStandard\compat\2.1.0\shims\netfx\System.Xml.Serialization.dll</HintPath>
     </Reference>
     <Reference Include="Unity.RenderPipelines.Core.Editor">
-      <HintPath>C:\Unity\Projects\Legends_Legacy_Of_Lost\Library\ScriptAssemblies\Unity.RenderPipelines.Core.Editor.dll</HintPath>
+      <HintPath>D:\Unity\My Projects\Legends_Legacy_Of_Lost\Library\ScriptAssemblies\Unity.RenderPipelines.Core.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.Common.Path.Editor">
-      <HintPath>C:\Unity\Projects\Legends_Legacy_Of_Lost\Library\ScriptAssemblies\Unity.2D.Common.Path.Editor.dll</HintPath>
+      <HintPath>D:\Unity\My Projects\Legends_Legacy_Of_Lost\Library\ScriptAssemblies\Unity.2D.Common.Path.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.Sprite.Editor">
-      <HintPath>C:\Unity\Projects\Legends_Legacy_Of_Lost\Library\ScriptAssemblies\Unity.2D.Sprite.Editor.dll</HintPath>
+      <HintPath>D:\Unity\My Projects\Legends_Legacy_Of_Lost\Library\ScriptAssemblies\Unity.2D.Sprite.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.InternalAPIEngineBridge.001">
-      <HintPath>C:\Unity\Projects\Legends_Legacy_Of_Lost\Library\ScriptAssemblies\Unity.InternalAPIEngineBridge.001.dll</HintPath>
+      <HintPath>D:\Unity\My Projects\Legends_Legacy_Of_Lost\Library\ScriptAssemblies\Unity.InternalAPIEngineBridge.001.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
-      <HintPath>C:\Unity\Projects\Legends_Legacy_Of_Lost\Library\ScriptAssemblies\Unity.TextMeshPro.dll</HintPath>
+      <HintPath>D:\Unity\My Projects\Legends_Legacy_Of_Lost\Library\ScriptAssemblies\Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="Unity.AI.Navigation">
-      <HintPath>C:\Unity\Projects\Legends_Legacy_Of_Lost\Library\ScriptAssemblies\Unity.AI.Navigation.dll</HintPath>
+      <HintPath>D:\Unity\My Projects\Legends_Legacy_Of_Lost\Library\ScriptAssemblies\Unity.AI.Navigation.dll</HintPath>
     </Reference>
     <Reference Include="Unity.RenderPipelines.Core.ShaderLibrary">
-      <HintPath>C:\Unity\Projects\Legends_Legacy_Of_Lost\Library\ScriptAssemblies\Unity.RenderPipelines.Core.ShaderLibrary.dll</HintPath>
+      <HintPath>D:\Unity\My Projects\Legends_Legacy_Of_Lost\Library\ScriptAssemblies\Unity.RenderPipelines.Core.ShaderLibrary.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VisualScripting.SettingsProvider.Editor">
-      <HintPath>C:\Unity\Projects\Legends_Legacy_Of_Lost\Library\ScriptAssemblies\Unity.VisualScripting.SettingsProvider.Editor.dll</HintPath>
+      <HintPath>D:\Unity\My Projects\Legends_Legacy_Of_Lost\Library\ScriptAssemblies\Unity.VisualScripting.SettingsProvider.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.Enhancers.Editor.AIBridge">
-      <HintPath>C:\Unity\Projects\Legends_Legacy_Of_Lost\Library\ScriptAssemblies\Unity.2D.Enhancers.Editor.AIBridge.dll</HintPath>
+      <HintPath>D:\Unity\My Projects\Legends_Legacy_Of_Lost\Library\ScriptAssemblies\Unity.2D.Enhancers.Editor.AIBridge.dll</HintPath>
     </Reference>
     <Reference Include="Unity.InternalAPIEditorBridge.001">
-      <HintPath>C:\Unity\Projects\Legends_Legacy_Of_Lost\Library\ScriptAssemblies\Unity.InternalAPIEditorBridge.001.dll</HintPath>
+      <HintPath>D:\Unity\My Projects\Legends_Legacy_Of_Lost\Library\ScriptAssemblies\Unity.InternalAPIEditorBridge.001.dll</HintPath>
     </Reference>
     <Reference Include="Unity.RenderPipelines.Universal.Editor">
-      <HintPath>C:\Unity\Projects\Legends_Legacy_Of_Lost\Library\ScriptAssemblies\Unity.RenderPipelines.Universal.Editor.dll</HintPath>
+      <HintPath>D:\Unity\My Projects\Legends_Legacy_Of_Lost\Library\ScriptAssemblies\Unity.RenderPipelines.Universal.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Timeline">
-      <HintPath>C:\Unity\Projects\Legends_Legacy_Of_Lost\Library\ScriptAssemblies\Unity.Timeline.dll</HintPath>
+      <HintPath>D:\Unity\My Projects\Legends_Legacy_Of_Lost\Library\ScriptAssemblies\Unity.Timeline.dll</HintPath>
     </Reference>
     <Reference Include="Unity.AI.Navigation.Updater">
-      <HintPath>C:\Unity\Projects\Legends_Legacy_Of_Lost\Library\ScriptAssemblies\Unity.AI.Navigation.Updater.dll</HintPath>
+      <HintPath>D:\Unity\My Projects\Legends_Legacy_Of_Lost\Library\ScriptAssemblies\Unity.AI.Navigation.Updater.dll</HintPath>
     </Reference>
     <Reference Include="Unity.AI.Navigation.Editor">
-      <HintPath>C:\Unity\Projects\Legends_Legacy_Of_Lost\Library\ScriptAssemblies\Unity.AI.Navigation.Editor.dll</HintPath>
+      <HintPath>D:\Unity\My Projects\Legends_Legacy_Of_Lost\Library\ScriptAssemblies\Unity.AI.Navigation.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.Common.Editor">
-      <HintPath>C:\Unity\Projects\Legends_Legacy_Of_Lost\Library\ScriptAssemblies\Unity.2D.Common.Editor.dll</HintPath>
+      <HintPath>D:\Unity\My Projects\Legends_Legacy_Of_Lost\Library\ScriptAssemblies\Unity.2D.Common.Editor.dll</HintPath>
     </Reference>
     <Reference Include="PPv2URPConverters">
-      <HintPath>C:\Unity\Projects\Legends_Legacy_Of_Lost\Library\ScriptAssemblies\PPv2URPConverters.dll</HintPath>
+      <HintPath>D:\Unity\My Projects\Legends_Legacy_Of_Lost\Library\ScriptAssemblies\PPv2URPConverters.dll</HintPath>
     </Reference>
     <Reference Include="Unity.RenderPipelines.Core.Runtime.Shared">
-      <HintPath>C:\Unity\Projects\Legends_Legacy_Of_Lost\Library\ScriptAssemblies\Unity.RenderPipelines.Core.Runtime.Shared.dll</HintPath>
+      <HintPath>D:\Unity\My Projects\Legends_Legacy_Of_Lost\Library\ScriptAssemblies\Unity.RenderPipelines.Core.Runtime.Shared.dll</HintPath>
     </Reference>
     <Reference Include="Unity.RenderPipelines.Universal.2D.Runtime">
-      <HintPath>C:\Unity\Projects\Legends_Legacy_Of_Lost\Library\ScriptAssemblies\Unity.RenderPipelines.Universal.2D.Runtime.dll</HintPath>
+      <HintPath>D:\Unity\My Projects\Legends_Legacy_Of_Lost\Library\ScriptAssemblies\Unity.RenderPipelines.Universal.2D.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VisualScripting.Shared.Editor">
-      <HintPath>C:\Unity\Projects\Legends_Legacy_Of_Lost\Library\ScriptAssemblies\Unity.VisualScripting.Shared.Editor.dll</HintPath>
+      <HintPath>D:\Unity\My Projects\Legends_Legacy_Of_Lost\Library\ScriptAssemblies\Unity.VisualScripting.Shared.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Searcher.Editor">
-      <HintPath>C:\Unity\Projects\Legends_Legacy_Of_Lost\Library\ScriptAssemblies\Unity.Searcher.Editor.dll</HintPath>
+      <HintPath>D:\Unity\My Projects\Legends_Legacy_Of_Lost\Library\ScriptAssemblies\Unity.Searcher.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.PlasticSCM.Editor">
-      <HintPath>C:\Unity\Projects\Legends_Legacy_Of_Lost\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll</HintPath>
+      <HintPath>D:\Unity\My Projects\Legends_Legacy_Of_Lost\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Burst.Editor">
-      <HintPath>C:\Unity\Projects\Legends_Legacy_Of_Lost\Library\ScriptAssemblies\Unity.Burst.Editor.dll</HintPath>
+      <HintPath>D:\Unity\My Projects\Legends_Legacy_Of_Lost\Library\ScriptAssemblies\Unity.Burst.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VisualScripting.Core">
-      <HintPath>C:\Unity\Projects\Legends_Legacy_Of_Lost\Library\ScriptAssemblies\Unity.VisualScripting.Core.dll</HintPath>
+      <HintPath>D:\Unity\My Projects\Legends_Legacy_Of_Lost\Library\ScriptAssemblies\Unity.VisualScripting.Core.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Mathematics.Editor">
-      <HintPath>C:\Unity\Projects\Legends_Legacy_Of_Lost\Library\ScriptAssemblies\Unity.Mathematics.Editor.dll</HintPath>
+      <HintPath>D:\Unity\My Projects\Legends_Legacy_Of_Lost\Library\ScriptAssemblies\Unity.Mathematics.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.InferenceEngine.ONNX.Editor">
-      <HintPath>C:\Unity\Projects\Legends_Legacy_Of_Lost\Library\ScriptAssemblies\Unity.InferenceEngine.ONNX.Editor.dll</HintPath>
+      <HintPath>D:\Unity\My Projects\Legends_Legacy_Of_Lost\Library\ScriptAssemblies\Unity.InferenceEngine.ONNX.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Rendering.LightTransport.Editor">
-      <HintPath>C:\Unity\Projects\Legends_Legacy_Of_Lost\Library\ScriptAssemblies\Unity.Rendering.LightTransport.Editor.dll</HintPath>
+      <HintPath>D:\Unity\My Projects\Legends_Legacy_Of_Lost\Library\ScriptAssemblies\Unity.Rendering.LightTransport.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.InferenceEngine.MacBLAS">
-      <HintPath>C:\Unity\Projects\Legends_Legacy_Of_Lost\Library\ScriptAssemblies\Unity.InferenceEngine.MacBLAS.dll</HintPath>
+      <HintPath>D:\Unity\My Projects\Legends_Legacy_Of_Lost\Library\ScriptAssemblies\Unity.InferenceEngine.MacBLAS.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Rider.Editor">
-      <HintPath>C:\Unity\Projects\Legends_Legacy_Of_Lost\Library\ScriptAssemblies\Unity.Rider.Editor.dll</HintPath>
+      <HintPath>D:\Unity\My Projects\Legends_Legacy_Of_Lost\Library\ScriptAssemblies\Unity.Rider.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.AI.Assistant.Bridge.Editor">
-      <HintPath>C:\Unity\Projects\Legends_Legacy_Of_Lost\Library\ScriptAssemblies\Unity.AI.Assistant.Bridge.Editor.dll</HintPath>
+      <HintPath>D:\Unity\My Projects\Legends_Legacy_Of_Lost\Library\ScriptAssemblies\Unity.AI.Assistant.Bridge.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.AI.Navigation.Editor.ConversionSystem">
-      <HintPath>C:\Unity\Projects\Legends_Legacy_Of_Lost\Library\ScriptAssemblies\Unity.AI.Navigation.Editor.ConversionSystem.dll</HintPath>
+      <HintPath>D:\Unity\My Projects\Legends_Legacy_Of_Lost\Library\ScriptAssemblies\Unity.AI.Navigation.Editor.ConversionSystem.dll</HintPath>
     </Reference>
     <Reference Include="Unity.InferenceEngine.Editor">
-      <HintPath>C:\Unity\Projects\Legends_Legacy_Of_Lost\Library\ScriptAssemblies\Unity.InferenceEngine.Editor.dll</HintPath>
+      <HintPath>D:\Unity\My Projects\Legends_Legacy_Of_Lost\Library\ScriptAssemblies\Unity.InferenceEngine.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.RenderPipelines.Core.Runtime">
-      <HintPath>C:\Unity\Projects\Legends_Legacy_Of_Lost\Library\ScriptAssemblies\Unity.RenderPipelines.Core.Runtime.dll</HintPath>
+      <HintPath>D:\Unity\My Projects\Legends_Legacy_Of_Lost\Library\ScriptAssemblies\Unity.RenderPipelines.Core.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VisualScripting.Flow">
-      <HintPath>C:\Unity\Projects\Legends_Legacy_Of_Lost\Library\ScriptAssemblies\Unity.VisualScripting.Flow.dll</HintPath>
+      <HintPath>D:\Unity\My Projects\Legends_Legacy_Of_Lost\Library\ScriptAssemblies\Unity.VisualScripting.Flow.dll</HintPath>
     </Reference>
     <Reference Include="Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary">
-      <HintPath>C:\Unity\Projects\Legends_Legacy_Of_Lost\Library\ScriptAssemblies\Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary.dll</HintPath>
+      <HintPath>D:\Unity\My Projects\Legends_Legacy_Of_Lost\Library\ScriptAssemblies\Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
-      <HintPath>C:\Unity\Projects\Legends_Legacy_Of_Lost\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll</HintPath>
+      <HintPath>D:\Unity\My Projects\Legends_Legacy_Of_Lost\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VisualScripting.Flow.Editor">
-      <HintPath>C:\Unity\Projects\Legends_Legacy_Of_Lost\Library\ScriptAssemblies\Unity.VisualScripting.Flow.Editor.dll</HintPath>
+      <HintPath>D:\Unity\My Projects\Legends_Legacy_Of_Lost\Library\ScriptAssemblies\Unity.VisualScripting.Flow.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VisualStudio.Editor">
-      <HintPath>C:\Unity\Projects\Legends_Legacy_Of_Lost\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll</HintPath>
+      <HintPath>D:\Unity\My Projects\Legends_Legacy_Of_Lost\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.Common.Runtime">
-      <HintPath>C:\Unity\Projects\Legends_Legacy_Of_Lost\Library\ScriptAssemblies\Unity.2D.Common.Runtime.dll</HintPath>
+      <HintPath>D:\Unity\My Projects\Legends_Legacy_Of_Lost\Library\ScriptAssemblies\Unity.2D.Common.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Collections">
-      <HintPath>C:\Unity\Projects\Legends_Legacy_Of_Lost\Library\ScriptAssemblies\Unity.Collections.dll</HintPath>
+      <HintPath>D:\Unity\My Projects\Legends_Legacy_Of_Lost\Library\ScriptAssemblies\Unity.Collections.dll</HintPath>
     </Reference>
     <Reference Include="Unity.InputSystem.ForUI">
-      <HintPath>C:\Unity\Projects\Legends_Legacy_Of_Lost\Library\ScriptAssemblies\Unity.InputSystem.ForUI.dll</HintPath>
+      <HintPath>D:\Unity\My Projects\Legends_Legacy_Of_Lost\Library\ScriptAssemblies\Unity.InputSystem.ForUI.dll</HintPath>
     </Reference>
     <Reference Include="Unity.AI.Assistant.Agent.Dynamic.Extension.Editor">
-      <HintPath>C:\Unity\Projects\Legends_Legacy_Of_Lost\Library\ScriptAssemblies\Unity.AI.Assistant.Agent.Dynamic.Extension.Editor.dll</HintPath>
+      <HintPath>D:\Unity\My Projects\Legends_Legacy_Of_Lost\Library\ScriptAssemblies\Unity.AI.Assistant.Agent.Dynamic.Extension.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.RenderPipelines.GPUDriven.Runtime">
-      <HintPath>C:\Unity\Projects\Legends_Legacy_Of_Lost\Library\ScriptAssemblies\Unity.RenderPipelines.GPUDriven.Runtime.dll</HintPath>
+      <HintPath>D:\Unity\My Projects\Legends_Legacy_Of_Lost\Library\ScriptAssemblies\Unity.RenderPipelines.GPUDriven.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Timeline.Editor">
-      <HintPath>C:\Unity\Projects\Legends_Legacy_Of_Lost\Library\ScriptAssemblies\Unity.Timeline.Editor.dll</HintPath>
+      <HintPath>D:\Unity\My Projects\Legends_Legacy_Of_Lost\Library\ScriptAssemblies\Unity.Timeline.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VisualScripting.State.Editor">
-      <HintPath>C:\Unity\Projects\Legends_Legacy_Of_Lost\Library\ScriptAssemblies\Unity.VisualScripting.State.Editor.dll</HintPath>
+      <HintPath>D:\Unity\My Projects\Legends_Legacy_Of_Lost\Library\ScriptAssemblies\Unity.VisualScripting.State.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Mathematics">
-      <HintPath>C:\Unity\Projects\Legends_Legacy_Of_Lost\Library\ScriptAssemblies\Unity.Mathematics.dll</HintPath>
+      <HintPath>D:\Unity\My Projects\Legends_Legacy_Of_Lost\Library\ScriptAssemblies\Unity.Mathematics.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Serialization">
-      <HintPath>C:\Unity\Projects\Legends_Legacy_Of_Lost\Library\ScriptAssemblies\Unity.Serialization.dll</HintPath>
+      <HintPath>D:\Unity\My Projects\Legends_Legacy_Of_Lost\Library\ScriptAssemblies\Unity.Serialization.dll</HintPath>
     </Reference>
     <Reference Include="Unity.RenderPipelines.Universal.Shaders">
-      <HintPath>C:\Unity\Projects\Legends_Legacy_Of_Lost\Library\ScriptAssemblies\Unity.RenderPipelines.Universal.Shaders.dll</HintPath>
+      <HintPath>D:\Unity\My Projects\Legends_Legacy_Of_Lost\Library\ScriptAssemblies\Unity.RenderPipelines.Universal.Shaders.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Multiplayer.Center.Common">
-      <HintPath>C:\Unity\Projects\Legends_Legacy_Of_Lost\Library\ScriptAssemblies\Unity.Multiplayer.Center.Common.dll</HintPath>
+      <HintPath>D:\Unity\My Projects\Legends_Legacy_Of_Lost\Library\ScriptAssemblies\Unity.Multiplayer.Center.Common.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UI">
-      <HintPath>C:\Unity\Projects\Legends_Legacy_Of_Lost\Library\ScriptAssemblies\UnityEngine.UI.dll</HintPath>
+      <HintPath>D:\Unity\My Projects\Legends_Legacy_Of_Lost\Library\ScriptAssemblies\UnityEngine.UI.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Burst">
-      <HintPath>C:\Unity\Projects\Legends_Legacy_Of_Lost\Library\ScriptAssemblies\Unity.Burst.dll</HintPath>
+      <HintPath>D:\Unity\My Projects\Legends_Legacy_Of_Lost\Library\ScriptAssemblies\Unity.Burst.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VisualScripting.Core.Editor">
-      <HintPath>C:\Unity\Projects\Legends_Legacy_Of_Lost\Library\ScriptAssemblies\Unity.VisualScripting.Core.Editor.dll</HintPath>
+      <HintPath>D:\Unity\My Projects\Legends_Legacy_Of_Lost\Library\ScriptAssemblies\Unity.VisualScripting.Core.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Multiplayer.Center.Editor">
-      <HintPath>C:\Unity\Projects\Legends_Legacy_Of_Lost\Library\ScriptAssemblies\Unity.Multiplayer.Center.Editor.dll</HintPath>
+      <HintPath>D:\Unity\My Projects\Legends_Legacy_Of_Lost\Library\ScriptAssemblies\Unity.Multiplayer.Center.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.RenderPipelines.Universal.Runtime">
-      <HintPath>C:\Unity\Projects\Legends_Legacy_Of_Lost\Library\ScriptAssemblies\Unity.RenderPipelines.Universal.Runtime.dll</HintPath>
+      <HintPath>D:\Unity\My Projects\Legends_Legacy_Of_Lost\Library\ScriptAssemblies\Unity.RenderPipelines.Universal.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="Unity.AI.Assistant.AvatarHelper.Editor">
-      <HintPath>C:\Unity\Projects\Legends_Legacy_Of_Lost\Library\ScriptAssemblies\Unity.AI.Assistant.AvatarHelper.Editor.dll</HintPath>
+      <HintPath>D:\Unity\My Projects\Legends_Legacy_Of_Lost\Library\ScriptAssemblies\Unity.AI.Assistant.AvatarHelper.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Rendering.LightTransport.Runtime">
-      <HintPath>C:\Unity\Projects\Legends_Legacy_Of_Lost\Library\ScriptAssemblies\Unity.Rendering.LightTransport.Runtime.dll</HintPath>
+      <HintPath>D:\Unity\My Projects\Legends_Legacy_Of_Lost\Library\ScriptAssemblies\Unity.Rendering.LightTransport.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VisualScripting.State">
-      <HintPath>C:\Unity\Projects\Legends_Legacy_Of_Lost\Library\ScriptAssemblies\Unity.VisualScripting.State.dll</HintPath>
+      <HintPath>D:\Unity\My Projects\Legends_Legacy_Of_Lost\Library\ScriptAssemblies\Unity.VisualScripting.State.dll</HintPath>
     </Reference>
     <Reference Include="Unity.RenderPipelines.Universal.Config.Runtime">
-      <HintPath>C:\Unity\Projects\Legends_Legacy_Of_Lost\Library\ScriptAssemblies\Unity.RenderPipelines.Universal.Config.Runtime.dll</HintPath>
+      <HintPath>D:\Unity\My Projects\Legends_Legacy_Of_Lost\Library\ScriptAssemblies\Unity.RenderPipelines.Universal.Config.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="Unity.RenderPipeline.Universal.ShaderLibrary">
-      <HintPath>C:\Unity\Projects\Legends_Legacy_Of_Lost\Library\ScriptAssemblies\Unity.RenderPipeline.Universal.ShaderLibrary.dll</HintPath>
+      <HintPath>D:\Unity\My Projects\Legends_Legacy_Of_Lost\Library\ScriptAssemblies\Unity.RenderPipeline.Universal.ShaderLibrary.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Collections.Editor">
-      <HintPath>C:\Unity\Projects\Legends_Legacy_Of_Lost\Library\ScriptAssemblies\Unity.Collections.Editor.dll</HintPath>
+      <HintPath>D:\Unity\My Projects\Legends_Legacy_Of_Lost\Library\ScriptAssemblies\Unity.Collections.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Serialization.Editor">
-      <HintPath>C:\Unity\Projects\Legends_Legacy_Of_Lost\Library\ScriptAssemblies\Unity.Serialization.Editor.dll</HintPath>
+      <HintPath>D:\Unity\My Projects\Legends_Legacy_Of_Lost\Library\ScriptAssemblies\Unity.Serialization.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.ShaderGraph.Editor">
-      <HintPath>C:\Unity\Projects\Legends_Legacy_Of_Lost\Library\ScriptAssemblies\Unity.ShaderGraph.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.RenderPipelines.Core.Editor.Shared">
-      <HintPath>C:\Unity\Projects\Legends_Legacy_Of_Lost\Library\ScriptAssemblies\Unity.RenderPipelines.Core.Editor.Shared.dll</HintPath>
+      <HintPath>D:\Unity\My Projects\Legends_Legacy_Of_Lost\Library\ScriptAssemblies\Unity.ShaderGraph.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.Sprite.AIIntegration.Editor">
-      <HintPath>C:\Unity\Projects\Legends_Legacy_Of_Lost\Library\ScriptAssemblies\Unity.2D.Sprite.AIIntegration.Editor.dll</HintPath>
+      <HintPath>D:\Unity\My Projects\Legends_Legacy_Of_Lost\Library\ScriptAssemblies\Unity.2D.Sprite.AIIntegration.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.RenderPipelines.Core.Editor.Shared">
+      <HintPath>D:\Unity\My Projects\Legends_Legacy_Of_Lost\Library\ScriptAssemblies\Unity.RenderPipelines.Core.Editor.Shared.dll</HintPath>
     </Reference>
     <Reference Include="Unity.InferenceEngine.iOSBLAS">
-      <HintPath>C:\Unity\Projects\Legends_Legacy_Of_Lost\Library\ScriptAssemblies\Unity.InferenceEngine.iOSBLAS.dll</HintPath>
+      <HintPath>D:\Unity\My Projects\Legends_Legacy_Of_Lost\Library\ScriptAssemblies\Unity.InferenceEngine.iOSBLAS.dll</HintPath>
     </Reference>
     <Reference Include="Unity.InputSystem">
-      <HintPath>C:\Unity\Projects\Legends_Legacy_Of_Lost\Library\ScriptAssemblies\Unity.InputSystem.dll</HintPath>
+      <HintPath>D:\Unity\My Projects\Legends_Legacy_Of_Lost\Library\ScriptAssemblies\Unity.InputSystem.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.Enhancers.Editor">
-      <HintPath>C:\Unity\Projects\Legends_Legacy_Of_Lost\Library\ScriptAssemblies\Unity.2D.Enhancers.Editor.dll</HintPath>
+      <HintPath>D:\Unity\My Projects\Legends_Legacy_Of_Lost\Library\ScriptAssemblies\Unity.2D.Enhancers.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Settings.Editor">
-      <HintPath>C:\Unity\Projects\Legends_Legacy_Of_Lost\Library\ScriptAssemblies\Unity.Settings.Editor.dll</HintPath>
+      <HintPath>D:\Unity\My Projects\Legends_Legacy_Of_Lost\Library\ScriptAssemblies\Unity.Settings.Editor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.UI">
-      <HintPath>C:\Unity\Projects\Legends_Legacy_Of_Lost\Library\ScriptAssemblies\UnityEditor.UI.dll</HintPath>
+      <HintPath>D:\Unity\My Projects\Legends_Legacy_Of_Lost\Library\ScriptAssemblies\UnityEditor.UI.dll</HintPath>
     </Reference>
     <Reference Include="Unity.InferenceEngine">
-      <HintPath>C:\Unity\Projects\Legends_Legacy_Of_Lost\Library\ScriptAssemblies\Unity.InferenceEngine.dll</HintPath>
+      <HintPath>D:\Unity\My Projects\Legends_Legacy_Of_Lost\Library\ScriptAssemblies\Unity.InferenceEngine.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>

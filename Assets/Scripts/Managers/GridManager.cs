@@ -45,8 +45,8 @@ public class GridManager : MonoBehaviour {
         float w = hexSprite.bounds.size.x;
         float hgt = hexSprite.bounds.size.y;
         float x = (h.Q + h.R * 0.5f) * w;
-        float y = h.R * (hgt * 0.75f);
-        return new Vector3(x, y, 0);
+        float z = h.R * (hgt * 0.75f);
+        return new Vector3(x, 0, z);
     }
 
     public bool SpawnUnit(UnitBase prefab, HexCoord coord) {

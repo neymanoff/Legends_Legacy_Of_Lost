@@ -1,8 +1,8 @@
 Using pre-set license
 Built from '6000.2/staging' branch; Version is '6000.2.0b5 (c1cd6601d4c1) revision 12701030'; Using compiler version '194234433'; Build Type 'Release'
-OS: 'Windows 11  (10.0.26100) 64bit Professional' Language: 'ru' Physical Memory: 16107 MB
+OS: 'Windows 11  (10.0.26100) 64bit Core' Language: 'ru' Physical Memory: 16108 MB
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1
-Date: 2025-06-26T02:24:10Z
+Date: 2025-06-26T13:29:22Z
 
 COMMAND LINE ARGUMENTS:
 C:\Program Files\Unity\Hub\Editor\6000.2.0b5\Editor\Unity.exe
@@ -12,21 +12,21 @@ C:\Program Files\Unity\Hub\Editor\6000.2.0b5\Editor\Unity.exe
 -name
 AssetImportWorker0
 -projectPath
-C:/Unity/Projects/Legends_Legacy_Of_Lost
+D:/Unity/My Projects/Legends_Legacy_Of_Lost
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-60012
+53366
 -job-worker-count
-5
+9
 -background-job-worker-count
 8
 -gc-helper-count
 1
 -name
 AssetImport
-Successfully changed project path to: C:/Unity/Projects/Legends_Legacy_Of_Lost
-C:/Unity/Projects/Legends_Legacy_Of_Lost
+Successfully changed project path to: D:/Unity/My Projects/Legends_Legacy_Of_Lost
+D:/Unity/My Projects/Legends_Legacy_Of_Lost
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
     "memorysetup-allocator-temp-initial-block-size-main=262144"
     "memorysetup-allocator-temp-initial-block-size-worker=262144"
@@ -62,13 +62,13 @@ C:/Unity/Projects/Legends_Legacy_Of_Lost
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [1512]  Target information:
+Player connection [17484]  Target information:
 
-Player connection [1512]  * "[IP] 192.168.157.23 [Port] 0 [Flags] 2 [Guid] 451587650 [EditorId] 451587650 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-QE5HQ60) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+Player connection [17484]  * "[IP] 192.168.1.36 [Port] 0 [Flags] 2 [Guid] 1855687866 [EditorId] 1855687866 [Version] 1048832 [Id] WindowsEditor(7,Neyman) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
 
-Player connection [1512] Host joined multi-casting on [225.0.0.222:54997]...
-Player connection [1512] Host joined alternative multi-casting on [225.0.0.222:34997]...
-JobSystem: Creating JobQueue using job-worker-count value 5
+Player connection [17484] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [17484] Host joined alternative multi-casting on [225.0.0.222:34997]...
+JobSystem: Creating JobQueue using job-worker-count value 9
 Input System module state changed to: Initialized.
 [Physics::Module] Initialized fallback backend.
 [Physics::Module] Id: 0xdecafbad
@@ -79,64 +79,62 @@ Library Redirect Path: Library/
 [Physics::Module] SDK Version: 4.1.2
 [Physics::Module] Integration Version: 1.0.0
 [Physics::Module] Threading Mode: Multi-Threaded
-Refreshing native plugins compatible for Editor in 4.22 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 3.14 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 6000.2.0b5 (c1cd6601d4c1)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/6000.2.0b5/Editor/Data/Resources/UnitySubsystems
-[Subsystems] Discovering subsystems at path C:/Unity/Projects/Legends_Legacy_Of_Lost/Assets
+[Subsystems] Discovering subsystems at path D:/Unity/My Projects/Legends_Legacy_Of_Lost/Assets
 GfxDevice: creating device client; kGfxThreadingModeNonThreaded
 Direct3D:
     Version:  Direct3D 11.0 [level 11.1]
-    Renderer: Intel(R) UHD Graphics (ID=0xa7a8)
-    Vendor:   Intel
-    VRAM:     8053 MB
-    Driver:   32.0.101.6129
+    Renderer: Microsoft Basic Render Driver (ID=0x8c)
+    Vendor:   Microsoft
+    VRAM:     8054 MB
+Shader Hidden/ProbeVolume/VoxelizeScene is not supported: GPU does not support conservative rasterization
 Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/6000.2.0b5/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/6000.2.0b5/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/6000.2.0b5/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56728
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56860
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
-Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.2.0b5/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.2.0b5/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.2.0b5/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
-Registered in 0.004704 seconds.
-- Loaded All Assemblies, in  0.649 seconds
+Registered in 0.003610 seconds.
+- Loaded All Assemblies, in  0.831 seconds
 Native extension for Android target not found
-Android Extension - Scanning For ADB Devices 413 ms
+Android Extension - Scanning For ADB Devices 516 ms
 Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  1.110 seconds
-Domain Reload Profiling: 1756ms
-	BeginReloadAssembly (197ms)
+- Finished resetting the current domain, in  1.522 seconds
+Domain Reload Profiling: 2349ms
+	BeginReloadAssembly (315ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
 		CreateAndSetChildDomain (1ms)
-	RebuildCommonClasses (58ms)
+	RebuildCommonClasses (69ms)
 	RebuildNativeTypeToScriptingClass (21ms)
-	initialDomainReloadingComplete (84ms)
-	LoadAllAssembliesAndSetupDomain (285ms)
-		LoadAssemblies (196ms)
+	initialDomainReloadingComplete (92ms)
+	LoadAllAssembliesAndSetupDomain (330ms)
+		LoadAssemblies (310ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (280ms)
-			TypeCache.Refresh (276ms)
-				TypeCache.ScanAssembly (255ms)
+		AnalyzeDomain (325ms)
+			TypeCache.Refresh (321ms)
+				TypeCache.ScanAssembly (293ms)
 			BuildScriptInfoCaches (0ms)
 			ResolveRequiredComponents (1ms)
-	FinalizeReload (1110ms)
+	FinalizeReload (1523ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (1025ms)
+		SetupLoadedEditorAssemblies (1422ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (560ms)
-			SetLoadedEditorAssemblies (12ms)
-			BeforeProcessingInitializeOnLoad (138ms)
-			ProcessInitializeOnLoadAttributes (245ms)
-			ProcessInitializeOnLoadMethodAttributes (70ms)
+			InitializePlatformSupportModulesInManaged (793ms)
+			SetLoadedEditorAssemblies (7ms)
+			BeforeProcessingInitializeOnLoad (199ms)
+			ProcessInitializeOnLoadAttributes (315ms)
+			ProcessInitializeOnLoadMethodAttributes (107ms)
 			AfterProcessingInitializeOnLoad (0ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
@@ -147,64 +145,166 @@ Import Worker Mode flag is 0x00
 Begin MonoManager ReloadAssembly
 Duplicate assembly 'System.Runtime.CompilerServices.Unsafe.dll' with different versions detected, using 'Packages/com.unity.collections/Unity.Collections.Tests/System.Runtime.CompilerServices.Unsafe/System.Runtime.CompilerServices.Unsafe.dll, AssemblyName=System.Runtime.CompilerServices.Unsafe, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a' and ignoring 'Packages/com.unity.ai.assistant/Plugins/Markdig/Dependencies/System.Runtime.CompilerServices.Unsafe.dll, AssemblyName=System.Runtime.CompilerServices.Unsafe, Version=4.0.6.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a'.Symbol file LoadedFromMemory is not a mono symbol file
 Symbol file LoadedFromMemory is not a mono symbol file
-- Loaded All Assemblies, in  1.543 seconds
-Refreshing native plugins compatible for Editor in 1.46 ms, found 3 plugins.
+- Loaded All Assemblies, in  1.877 seconds
+Refreshing native plugins compatible for Editor in 1.09 ms, found 3 plugins.
 Native extension for Android target not found
 Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
 Package Manager log level set to [2]
 [Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
 [Package Manager] Unable to send message (not connected to server process).
 [Package Manager] Cannot connect to Unity Package Manager local server
+Failed to list local packages
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+UnityEditor.U2D.Sprites.AIIntegration.AIIntegration:Install2DEnhancerPackage () (at ./Library/PackageCache/com.unity.2d.sprite@dd7a8e38b96d/Editor/AIIntegration/AIIntegration.cs:29)
+UnityEditor.U2D.Sprites.AIIntegration.AIIntegration:.cctor () (at ./Library/PackageCache/com.unity.2d.sprite@dd7a8e38b96d/Editor/AIIntegration/AIIntegration.cs:20)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+(Filename: ./Library/PackageCache/com.unity.2d.sprite@dd7a8e38b96d/Editor/AIIntegration/AIIntegration.cs Line: 29)
+
+System.ArgumentNullException: Value cannot be null.
+Parameter name: collection
+  at System.Collections.Generic.List`1[T]..ctor (System.Collections.Generic.IEnumerable`1[T] collection) [0x00009] in <748d46004b1941a4ae235b187efb7b4d>:0 
+  at UnityEditor.U2D.Sprites.AIIntegration.AIIntegration.Install2DEnhancerPackage () [0x0002b] in .\Library\PackageCache\com.unity.2d.sprite@dd7a8e38b96d\Editor\AIIntegration\AIIntegration.cs:31 
+  at UnityEditor.U2D.Sprites.AIIntegration.AIIntegration..cctor () [0x00015] in .\Library\PackageCache\com.unity.2d.sprite@dd7a8e38b96d\Editor\AIIntegration\AIIntegration.cs:20 
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  1.445 seconds
-Domain Reload Profiling: 2981ms
-	BeginReloadAssembly (280ms)
+- Finished resetting the current domain, in  1.674 seconds
+Domain Reload Profiling: 3545ms
+	BeginReloadAssembly (348ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (9ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (43ms)
-	RebuildCommonClasses (63ms)
-	RebuildNativeTypeToScriptingClass (20ms)
-	initialDomainReloadingComplete (63ms)
-	LoadAllAssembliesAndSetupDomain (1110ms)
-		LoadAssemblies (655ms)
+		CreateAndSetChildDomain (50ms)
+	RebuildCommonClasses (67ms)
+	RebuildNativeTypeToScriptingClass (19ms)
+	initialDomainReloadingComplete (67ms)
+	LoadAllAssembliesAndSetupDomain (1370ms)
+		LoadAssemblies (792ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (625ms)
-			TypeCache.Refresh (499ms)
-				TypeCache.ScanAssembly (467ms)
-			BuildScriptInfoCaches (98ms)
-			ResolveRequiredComponents (19ms)
-	FinalizeReload (1445ms)
+		AnalyzeDomain (773ms)
+			TypeCache.Refresh (631ms)
+				TypeCache.ScanAssembly (591ms)
+			BuildScriptInfoCaches (116ms)
+			ResolveRequiredComponents (18ms)
+	FinalizeReload (1674ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (1056ms)
+		SetupLoadedEditorAssemblies (1268ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (23ms)
-			SetLoadedEditorAssemblies (9ms)
-			BeforeProcessingInitializeOnLoad (237ms)
-			ProcessInitializeOnLoadAttributes (529ms)
-			ProcessInitializeOnLoadMethodAttributes (251ms)
+			InitializePlatformSupportModulesInManaged (17ms)
+			SetLoadedEditorAssemblies (6ms)
+			BeforeProcessingInitializeOnLoad (302ms)
+			ProcessInitializeOnLoadAttributes (671ms)
+			ProcessInitializeOnLoadMethodAttributes (264ms)
 			AfterProcessingInitializeOnLoad (7ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
 		AwakeInstancesAfterBackupRestoration (9ms)
+Shader Hidden/ProbeVolume/VoxelizeScene is not supported: GPU does not support conservative rasterization
 Launched and connected shader compiler UnityShaderCompiler.exe after 0.02 seconds
-Refreshing native plugins compatible for Editor in 1.59 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 1.07 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 362 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 7454 unused Assets / (16.1 MB). Loaded Objects now: 10177.
-Memory consumption went from 214.9 MB to 198.7 MB.
-Total: 15.247500 ms (FindLiveObjects: 0.759400 ms CreateObjectMapping: 0.521000 ms MarkObjects: 8.584100 ms  DeleteObjects: 5.380600 ms)
+Unloading 373 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 7681 unused Assets / (18.7 MB). Loaded Objects now: 10414.
+Memory consumption went from 224.7 MB to 206.0 MB.
+Total: 21.417300 ms (FindLiveObjects: 2.368000 ms CreateObjectMapping: 1.887200 ms MarkObjects: 8.438700 ms  DeleteObjects: 8.721300 ms)
 
 ========================================================================
 Received Import Request.
-  Time since last request: 172604.780656 seconds.
-  path: Assets/Scripts/Managers/SkillButtonsUI.cs
-  artifactKey: Guid(7e69c865537e05a4bb25dacd8fe46a12) Importer(2089858483,192608db42251d675da83286b1cce702)
-Start importing Assets/Scripts/Managers/SkillButtonsUI.cs using Guid(7e69c865537e05a4bb25dacd8fe46a12) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '8b2b33d64d22f65aaacf969cdc4e372e') in 0.2739345 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+  Time since last request: 258049.838325 seconds.
+  path: Assets/Prefabs/Units
+  artifactKey: Guid(1adb7202d355cb84aa6f1479d51b24fa) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Prefabs/Units using Guid(1adb7202d355cb84aa6f1479d51b24fa) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '8d059a664296db0ef016c67d20d87440') in 0.2529819 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/Prefabs/Grid/GridCell_Prefab.prefab
+  artifactKey: Guid(a18712162bf7fc546859ceed01cad1b3) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Prefabs/Grid/GridCell_Prefab.prefab using Guid(a18712162bf7fc546859ceed01cad1b3) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'bd5244c6ae7f5ace52559081146c6979') in 0.1766512 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 230.014823 seconds.
+  path: Assets/Art/3D Models/Warrior maiden/Texture/Skin1/2_Head_Albedo.tga
+  artifactKey: Guid(385a810c5afc95e44b33d70989745d68) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/3D Models/Warrior maiden/Texture/Skin1/2_Head_Albedo.tga using Guid(385a810c5afc95e44b33d70989745d68) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '41b2f3fd790c980a9a3087bcb8bb8651') in 0.1111216 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/Art/3D Models/Warrior maiden/Texture/Skin2/2_Head_Normal.tga
+  artifactKey: Guid(003c9952acc8cff469d464caee65ee36) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/3D Models/Warrior maiden/Texture/Skin2/2_Head_Normal.tga using Guid(003c9952acc8cff469d464caee65ee36) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '0902eb4a07e150b49457f7fb617a1055') in 0.0974953 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000069 seconds.
+  path: Assets/Art/3D Models/Warrior maiden/Texture/Skin1/2_Head_Occlusion.tga
+  artifactKey: Guid(3f27b0849f5292c46a5f2b6906b81ec3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/3D Models/Warrior maiden/Texture/Skin1/2_Head_Occlusion.tga using Guid(3f27b0849f5292c46a5f2b6906b81ec3) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'ca04ceae583887306ef402abb2596d22') in 0.0408495 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/Art/3D Models/Warrior maiden/Base mesh/Warrior maiden Skin2.FBX
+  artifactKey: Guid(d7d1964746628a74bbd2e90fd3d929ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/3D Models/Warrior maiden/Base mesh/Warrior maiden Skin2.FBX using Guid(d7d1964746628a74bbd2e90fd3d929ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'cd98827d77bbd410b5741f227062ee8d') in 1.5339812 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 533
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000053 seconds.
+  path: Assets/TextMesh Pro/Resources/Style Sheets/Default Style Sheet.asset
+  artifactKey: Guid(f952c082cb03451daed3ee968ac6c63e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Resources/Style Sheets/Default Style Sheet.asset using Guid(f952c082cb03451daed3ee968ac6c63e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '082f5e5bc62554346f89c089a9ffd741') in 0.0040191 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000062 seconds.
+  path: Assets/Art/3D Models/Warrior maiden/Materials/Materials Skin1/Mat_Warrior_maiden_head4.mat
+  artifactKey: Guid(d258cfc9691b2a64fa91b44801448e67) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/3D Models/Warrior maiden/Materials/Materials Skin1/Mat_Warrior_maiden_head4.mat using Guid(d258cfc9691b2a64fa91b44801448e67) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '8a2238db8a8d4758801404f215e8ae60') in 0.0999399 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 5
+
+========================================================================
+Received Import Request.
+  Time since last request: 8.560376 seconds.
+  path: Packages/com.unity.2d.sprite/Editor/ObjectMenuCreation/DefaultAssets/Textures/v2/HexagonFlatTop.png
+  artifactKey: Guid(b670ab75dde984907b8570040daa08c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.2d.sprite/Editor/ObjectMenuCreation/DefaultAssets/Textures/v2/HexagonFlatTop.png using Guid(b670ab75dde984907b8570040daa08c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '8bfa9b93bd3a857255cf8e4b120284d9') in 0.0863633 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000087 seconds.
+  path: Packages/com.unity.2d.sprite/Editor/ObjectMenuCreation/DefaultAssets/Textures/v2/HexagonPointTop.png
+  artifactKey: Guid(5aa8b770bc43046bc8d993d0d5b7f4a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.2d.sprite/Editor/ObjectMenuCreation/DefaultAssets/Textures/v2/HexagonPointTop.png using Guid(5aa8b770bc43046bc8d993d0d5b7f4a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '62aecf24f3456cb769529963d510e959') in 0.0241858 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
 
 Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
 AssetImportWorker is now disconnected from the server
