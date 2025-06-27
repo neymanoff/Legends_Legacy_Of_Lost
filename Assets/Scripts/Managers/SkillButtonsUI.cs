@@ -26,10 +26,12 @@ namespace Managers
 
         public void ShowButtons(UnitBase unit, UnitBase target)
         {
+            Debug.Log("ShowButtons вызван"); // Добавьте эту строку
             currentTarget = target;
             Initialize(unit);
         }
-        public void Initialize(UnitBase unit)
+
+        private void Initialize(UnitBase unit)
         {
             currentUnit = unit;
             ClearButtons();
@@ -47,7 +49,7 @@ namespace Managers
                 if (overlayTf == null)
                 {
                     Debug.LogError($"[{nameof(SkillButtonsUI)}] В префабе нет дочернего объекта 'CooldownOverlay'");
-                    return;
+                    return; // Здесь код прерывается, если не найден CooldownOverlay
                 }
                 var overlay = go.transform.Find("CooldownOverlay").GetComponent<Image>();
                 var cdText = go.transform.Find("CooldownText").GetComponent<TMP_Text>();

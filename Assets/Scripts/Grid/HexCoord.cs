@@ -1,12 +1,14 @@
+using System;
+
 namespace Grid
 {
-    public struct HexCoord
+    public readonly struct HexCoord : IEquatable<HexCoord>
     {
-        public int Q; 
-        public int R;
+        public readonly int Q; 
+        public readonly int R;
         public HexCoord(int q, int r) {Q = q; R = r;}
 
-        public static HexCoord[] Directions =
+        private static readonly HexCoord[] Directions =
         {
             new HexCoord(+1, 0), new HexCoord(+1, -1),
             new HexCoord(0, -1), new HexCoord(-1, 0),
@@ -14,5 +16,20 @@ namespace Grid
         };
 
         public HexCoord Neighbor(int i) => new HexCoord(Q + Directions[i].Q, R + Directions[i].R);
+
+        public bool Equals(HexCoord other)
+        {
+            return Q == other.Q && R == other.R;
+        }
+
+        public override bool Equals(object obj)
+        {
+            return obj is HexCoord other && Equals(other);
+        }
+
+        public override int GetHashCode()
+        {
+            return HashCode.Combine(Q, R);
+        }
     }
 }

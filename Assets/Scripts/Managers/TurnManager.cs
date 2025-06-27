@@ -20,13 +20,6 @@ namespace Managers
             else Destroy(this);
         }
 
-        private void Start()
-        {
-            allUnits.AddRange(playerUnits);
-            allUnits.AddRange(enemyUnits);
-            FinishTurn();
-        }
-
         public void FinishTurn()
         {
             bool anyPlayerAlive = playerUnits.Exists(u => u.isAlive);
@@ -101,6 +94,16 @@ namespace Managers
             }
 
             return null;
+        }
+
+        public void InitializeUnits(List<UnitBase> players, List<UnitBase> enemies)
+        {
+            playerUnits = players;
+            enemyUnits = enemies;
+            allUnits.Clear();
+            allUnits.AddRange(playerUnits);
+            allUnits.AddRange(enemyUnits);
+            FinishTurn();
         }
     }
 }

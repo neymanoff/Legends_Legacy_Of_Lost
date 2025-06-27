@@ -508,3 +508,7 @@ D:\Unity\My Projects\Legends_Legacy_Of_Lost\obj\Debug\Assembly-CSharp.csproj.Cor
 D:\Unity\My Projects\Legends_Legacy_Of_Lost\obj\Debug\Assembly.44154EF1.Up2Date
 D:\Unity\My Projects\Legends_Legacy_Of_Lost\obj\Debug\Assembly-CSharp.dll
 D:\Unity\My Projects\Legends_Legacy_Of_Lost\obj\Debug\Assembly-CSharp.pdb
+C:\Unity\Projects\Legends_Legacy_Of_Lost\obj\Debug\Assembly-CSharp.csproj.AssemblyReference.cache
+C:\Unity\Projects\Legends_Legacy_Of_Lost\obj\Debug\Assembly-CSharp.csproj.CoreCompileInputs.cache
+C:\Unity\Projects\Legends_Legacy_Of_Lost\obj\Debug\Assembly-CSharp.dll
+C:\Unity\Projects\Legends_Legacy_Of_Lost\obj\Debug\Assembly-CSharp.pdb
