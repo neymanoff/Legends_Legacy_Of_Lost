@@ -57,10 +57,10 @@ namespace Managers
                 iconImg.sprite = inst.Definition.Icon;
                 int index = i;
                 btn.onClick.AddListener(() => OnSkillButtonClicked(index));
-                btn.onClick.AddListener(() => {
+                /*btn.onClick.AddListener(() => {
                     Debug.Log($"[SkillButtonsUI] Clicked skill #{index}");
                     currentUnit.UseSkill(index, currentTarget);
-                });
+                });*/
 
                 skillButtons.Add(new SkillButton
                 {

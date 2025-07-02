@@ -32,8 +32,11 @@ namespace Grid
                 case CellOwner.Enemy:
                     sr.color = new Color(1f, 0.4f, 0.4f);
                     break;
+                case CellOwner.Neutral:
                 default:
-                    sr.color = Color.white;
+                    var c = Color.white;
+                    c.a = 0f;
+                    sr.color = c;
                     break;
             }
             {
