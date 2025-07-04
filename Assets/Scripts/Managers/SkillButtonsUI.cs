@@ -22,6 +22,18 @@ namespace Managers
         {
             if (Instance == null) Instance = this;
             else Destroy(gameObject);
+
+            if (buttonPrefab == null)
+            {
+                Debug.LogError("ButtonPrefab не назначен!", this);
+                enabled = false;
+            }
+
+            if (buttonContainer == null)
+            {
+                Debug.LogError("ButtonContainer не назначен!", this);
+                enabled = false;
+            }
         }
 
         public void ShowButtons(UnitBase unit, UnitBase target)

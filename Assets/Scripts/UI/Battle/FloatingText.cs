@@ -1,55 +1,77 @@
-﻿// Assets/Scripts/UI/FloatingText.cs
+﻿// Assets/Scripts/UI/Battle/FloatingText.cs
 using TMPro;
 using UnityEngine;
 using UnityEngine.TextCore.Text;
 using FontStyles = TMPro.FontStyles;
 
-namespace Game.UI {
-    public class FloatingText : MonoBehaviour {
+namespace UI.Battle 
+{
+    public class FloatingText : MonoBehaviour 
+    {
         [SerializeField] private TMP_Text textMesh;
         [SerializeField] private float floatSpeed = 20f;
         [SerializeField] private float lifetime = 1.5f;
 
         private float timer;
-        private Vector3 moveDirection = Vector3.up;
+        private static readonly Vector3 moveDirection = Vector3.up;
         private Color originalColor;
+        private FloatingTextPool pool;
 
-        private void Awake() {
+        private void Awake() 
+        {
             if (textMesh == null)
                 textMesh = GetComponentInChildren<TMP_Text>();
 
             originalColor = textMesh.color;
         }
 
-        public void Show(string content, Color color, bool isCrit) {
+        public void Initialize(FloatingTextPool pool)
+        {
+            if (pool == null)
+                Debug.LogError("FloatingTextPool не может быть null!", this);
+                
+            this.pool = pool;
+        }
+
+        public void Show(string content, Color color, bool isCrit) 
+        {
             textMesh.text = content;
             textMesh.color = color;
 
-            if (isCrit) {
+            if (isCrit) 
+            {
                 textMesh.fontSize *= 1.3f;
                 textMesh.fontStyle = FontStyles.Bold;
-            } else {
-                textMesh.fontSize = 36f; // your default size
+            } 
+            else 
+            {
+                textMesh.fontSize = 36f;
                 textMesh.fontStyle = FontStyles.Normal;
             }
 
             timer = 0f;
             originalColor = textMesh.color;
+            gameObject.SetActive(true);
         }
 
-        private void Update() {
+        private void Update() 
+        {
+            if (!pool)
+            {
+                Debug.LogError("FloatingTextPool не инициализирован! Убедитесь, что вызван метод Initialize.", this);
+                enabled = false;
+                return;
+            }
+
             timer += Time.deltaTime;
 
-            // Move upward
-            transform.position += moveDirection * floatSpeed * Time.deltaTime;
+            transform.position += moveDirection * (floatSpeed * Time.deltaTime);
 
-            // Fade out
             float alpha = Mathf.Lerp(originalColor.a, 0, timer / lifetime);
             textMesh.color = new Color(originalColor.r, originalColor.g, originalColor.b, alpha);
 
-            // Destroy when done
             if (timer >= lifetime)
-                Destroy(gameObject);
+                pool.Return(this);
         }
     }
 }

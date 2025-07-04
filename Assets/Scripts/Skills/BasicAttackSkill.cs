@@ -1,6 +1,5 @@
 using System.Collections.Generic;
 using Core;
-using Game.UI;
 using UnityEngine;
 
 namespace Skills

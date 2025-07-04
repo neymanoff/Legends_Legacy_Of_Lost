@@ -34,13 +34,13 @@ namespace UI.Battle
 
             rect.anchoredPosition    = position;
             canvasGroup.alpha        = 1f;
-            canvasGroup.blocksRaycasts = true;
+            //canvasGroup.blocksRaycasts = true;
         }
 
         public void Hide()
         {
             canvasGroup.alpha        = 0f;
-            canvasGroup.blocksRaycasts = false;
+            //canvasGroup.blocksRaycasts = false;
         }
     }
 }
